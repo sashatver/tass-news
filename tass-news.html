@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТАСС | Инновационный проект в сфере культуры</title>
+    <style>
+        :root {
+            --main-blue: #0055A5;
+            --accent-blue: #003366;
+            --light-blue: #E6F0FA;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            background: var(--light-blue);
+            padding: 20px;
+            border-right: 3px solid var(--main-blue);
+        }
+
+        .news-card {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            background: var(--main-blue);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-logo {
+            width: 180px;
+        }
+
+        .small-logo {
+            width: 50px;
+            opacity: 0.8;
+        }
+
+        .main-content {
+            padding: 30px;
+            background: white;
+            line-height: 1.7;
+        }
+
+        h1 {
+            color: var(--accent-blue);
+            border-bottom: 2px solid var(--main-blue);
+            padding-bottom: 15px;
+            margin: 25px 0;
+        }
+
+        .agency-info {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--main-blue);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <div class="header">
+        <img src="https://i.postimg.cc/ppZ9BkzJ/IMG-0737.jpg" 
+             alt="Логотип ТАСС" 
+             class="main-logo">
+        <img src="https://i.postimg.cc/ppZ9BkzJ/IMG-0737.jpg" 
+             alt="Логотип ТАСС" 
+             class="small-logo">
+    </div>
+
+    <!-- Новостная лента -->
+    <div class="sidebar">
+        <div class="news-card">
+            <img src="https://i.postimg.cc/QBBHh3Pf/IMG-0734.jpg" 
+                 alt="Новый интерьер касс Сбербанка">
+            <div class="news-card-content">
+                <h4>Новый интерьер касс Сбербанка</h4>
+                <a href="https://tass.ru/finance">Читать →</a>
+            </div>
+        </div>
+        
+        <div class="news-card">
+            <img src="https://i.postimg.cc/xX1XpHPD/IMG-0735.jpg" 
+                 alt="Госдума">
+            <div class="news-card-content">
+                <h4>Новый проект из Госдумы</h4>
+                <a href="https://tass.ru/politika">Читать →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <div class="date">30 марта 2025 г.</div>
+        
+        <h1>Информационное сообщение ТАСС<br>
+        О реализации инновационного проекта в сфере цифровизации культурных учреждений</h1>
+
+        <p><em>Санкт-Петербург, 30 марта 2025</em></p>
+
+        <p>На основании официальных данных, предоставленных театром «Санкт-Петербург Опера» и Комитетом по культуре Санкт-Петербурга, агентство ТАСС информирует о ходе реализации проекта по разработке и внедрению специализированного Telegram-бота с применением нейросетевых технологий под руководством генерального директора проекта Александра Андреевича Твердова.</p>
+
+        <h2>Основные сведения о проекте:</h2>
+        <ol> 
+<li><strong>Цель:</strong> Автоматизация сервисных процессов театра, оптимизация взаимодействия с аудиторией посредством персонализированных рекомендаций спектаклей, бронирования билетов, анализа зрительских предпочтений и предоставления информации о репертуаре в интерактивном формате.</li>
+            
+            <li><strong>Технологическая база:</strong> Нейросетевые алгоритмы, адаптированные под специфику театральной деятельности, включая обработку естественного языка и машинное обучение для анализа обратной связи.</li>
+            
+            <li><strong>Правовое соответствие:</strong> Проект успешно прошёл экспертизу Федеральной службы по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор). Установлено отсутствие технических нарушений и полное соответствие требованиям законодательства Российской Федерации.</li>
+            
+            <li><strong>Этапы реализации:</strong>
+                <ul>
+                    <li>Разработка завершена на 80% по состоянию на март 2025 года.</li>
+                    <li>Окончание тестирования функционала и обучение сотрудников запланированы на апрель 2025 года.</li>
+                    <li>Официальный запуск системы состоится 30 апреля 2025 года.</li>
+                </ul>
+            </li>
+            
+            <li><strong>Перспективы:</strong> Интеграция дополненной реальности (AR) для взаимодействия пользователей с цифровыми декорациями и элементами костюмов.</li>
+        </ol>
+
+        <h2>Признание на государственном уровне</h2>
+        <p>26 марта 2025 года Александр Андреевич Твердов удостоен памятного знака «За инновации в культуре» и благодарности Комитета по культуре Санкт-Петербурга за вклад в цифровизацию учреждений культуры и вовлечение молодёжной аудитории.</p>
+
+        <h2>Заключение</h2>
+        <p>Проект является частью стратегии Министерства культуры РФ по модернизации культурных институций через внедрение передовых технологий. Театр «Санкт-Петербург Опера» подтверждает статус пилотной площадки, сочетающей классическое наследие с цифровыми решениями.</p>
+
+        <div class="agency-info">
+            <h4>ТАСС. Санкт-Петербург</h4>
+            <p>30 марта 2025 г.<br>
+            Версия 1.0<br>
+            Все права защищены</p>
+        </div>
+    </main>
+</body>
+</html>
